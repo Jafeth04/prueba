@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecciona tu Carrera</title>
+    <link rel="stylesheet" href="cienciaytegnologica.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Selecciona tu Carrera</h1>
+        <form>
+            <div class="buttons">
+                <button type="button" value="sistemas">Ingeniería en Sistemas</button>
+                <button type="button" value="arquitectura">Arquitectura</button>
+                <button type="button" value="civil">Ingeniería Civil</button>
+                <button type="button" value="alimentos">Ingeniería en Alimentos</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert(`Has seleccionado: ${button.textContent}`);
+            });
+        });
+    </script>
+</body>
+</html>
